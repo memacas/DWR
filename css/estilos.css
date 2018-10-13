@@ -1,0 +1,33 @@
+body{
+	background-color: #02010a;
+	font-family: 'Dancing Script';
+	padding:0;
+	margin:0;
+}
+#cabecera{
+	background-color: #5b7989;
+	border-radius: 10px;
+	padding: 5px; 
+}
+#cabecera #titulo{
+	color: fff;
+	text-shadow: 2px 2px 2px #02010a;
+}
+
+#contenido{
+	height: 200px;
+	background-color: green;
+}
+
+@media (min-width: 900px) {
+	#contenido, #cabecera{
+		width: 900px;
+		margin: auto;
+	}
+}
+
+@media (max-width: 900px) {
+	#contenido{
+		width: 100%;
+	}
+}
