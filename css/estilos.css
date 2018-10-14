@@ -97,12 +97,17 @@ section a{
 	font-style: normal;
 }
 
-#columna1 a img{
+section a img{
 	transition-property: transform, box-shadow;
 	transition-duration: 0.5s, 0.5s;
 }
 #columna1 a:hover img{
 	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px #82c3a6;
+}
+
+#columna2 a:hover img{
+	transform: translate(20px,-5px);
 	box-shadow: 2px 2px 2px #82c3a6;
 }
 
