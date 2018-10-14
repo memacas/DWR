@@ -11,7 +11,7 @@ body{
 	width: 100%;
 }
 
-#contenido{
+header #menu, #contenido, #contenido section, #contenido header{
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row wrap;
@@ -24,10 +24,6 @@ body{
     border-radius: 10px 10px 0px 0px;
     color: fff;
     height: 18vh;
-		display: -webkit-flex;
-		display: flex;
-		-webkit-flex-flow: row wrap;
-		flex-flow: row wrap;
 		margin: 0;
 		padding: 0;
 		width: 100%;
@@ -37,15 +33,12 @@ header>div{
 	box-sizing: border-box;
 }
 
-
-
 header #titulo{
 	margin-top: auto;
 	margin-bottom: auto;
 	padding-left: 2%;
 	width: 70%;
 	text-shadow: 2px 2px 2px #02010a;
-
 }
 
 header #menu{
@@ -53,10 +46,6 @@ header #menu{
 	text-align: center;
 	margin-top: auto;
 	margin-bottom: auto;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
 }
 
 header #menu>div{
@@ -68,16 +57,11 @@ header #menu a{
 	font-style: normal;
 }
 
-header #menu a:hover{
-	font-style: normal;
+header #menu a:hover, section a:hover{
 	text-decoration: none;
 }
 
 #contenido section{
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -102,6 +86,24 @@ header #menu a:hover{
 
 #imagen_central img{
 	width: 100%;
+}
+
+section img{
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+section a{
+	color: 000;
+	font-style: normal;
+}
+
+#columna1 a img{
+	transition-property: transform, box-shadow;
+	transition-duration: 0.5s, 0.5s;
+}
+#columna1 a:hover img{
+	transform: rotate(10deg);
+	box-shadow: 2px 2px 2px #82c3a6;
 }
 
 @media (min-width: 900px) {
