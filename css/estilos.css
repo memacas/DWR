@@ -5,27 +5,36 @@ body{
 	padding: 0;
 }
 
-#container {
+#contenido {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 }
 
-#container{
+#contenido{
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row wrap;
 	flex-flow: row wrap;
 }
 
-header {
+#contenido header {
     height: 2em;
     background-color: #5b7989;
     border-radius: 10px 10px 0px 0px;
     color: fff;
-    width: 100%;
-    display: flex;
     height: 18vh;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+}
+
+header>div{
+	box-sizing: border-box;
 }
 
 
@@ -33,21 +42,25 @@ header {
 header #titulo{
 	margin-top: auto;
 	margin-bottom: auto;
-	margin-left: 2%;
+	padding-left: 2%;
 	width: 70%;
 	text-shadow: 2px 2px 2px #02010a;
+
 }
 
 header #menu{
 	width: 30%;
-	display: flex;
 	text-align: center;
 	margin-top: auto;
 	margin-bottom: auto;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
 }
 
 header #menu>div{
-	flex-grow: 1;
+	width: 33.3%;
 }
 
 header #menu a{
@@ -60,10 +73,31 @@ header #menu a:hover{
 	text-decoration: none;
 }
 
-#imagen_central{
-	padding: 2% 5% 2% 5%;
-	background-color: #82c3a6;
+#contenido section{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
 
+#contenido section>div
+{
+	box-sizing: border-box;
+
+}
+
+#imagen_central{
+	background-color: #82c3a6;
+	padding: 2% 5% 2% 5%;
+	width: 100%;
+}
+
+.demas_imagenes{
+	width: 50%;
+	background-color: #d5c75f;
 }
 
 #imagen_central img{
