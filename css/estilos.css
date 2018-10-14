@@ -11,7 +11,7 @@ body{
 	width: 100%;
 }
 
-header #menu, #contenido, #contenido section, #contenido header{
+header #menu, #contenido, #contenido section, #contenido header, #contenido footer{
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-flow: row wrap;
@@ -95,6 +95,7 @@ section img{
 section a{
 	color: 000;
 	font-style: normal;
+	text-align: center;
 }
 
 section a img{
@@ -111,6 +112,49 @@ section a img{
 	box-shadow: 2px 2px 2px #82c3a6;
 }
 
+footer{
+	background-color: #C6d5c5;
+	width: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	border-radius: 0px 0px 10px 10px;
+	padding-bottom: 20px;
+}
+
+footer>div{
+	width: 25%;
+}
+
+footer>div p{
+	padding-top: 0;
+	margin: 0;
+}
+
+footer>div h3{
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+footer a{
+	color: 000;
+	text-decoration: none;
+	font-style: normal;
+}
+
+footer #footer3 img{
+	height: 10px;
+	width: 10px;
+}
+
+footer #footer3 ul{
+	margin: 0;
+	padding: 0;
+}
+
+footer #footer3 li{
+	list-style-type: none;
+}
+
 @media (min-width: 900px) {
 	#contenido{
 		width: 900px;
@@ -120,7 +164,23 @@ section a img{
 }
 
 @media (max-width: 900px) {
-	#contenido{
+	#contenido, header #titulo, header #menu{
+		width: 100%;
+	}
+	header #titulo{
+		text-align: center;
+	}
+	header #menu{
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+	#columna1, #columna2{
+		width: 100%;
+	}
+	footer{
+		padding: 5%;
+	}
+	footer>div{
 		width: 100%;
 	}
 }
