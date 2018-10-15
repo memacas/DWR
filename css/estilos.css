@@ -57,7 +57,11 @@ header #menu a{
 	font-style: normal;
 }
 
-header #menu a:hover, section a:hover{
+header #menu a.active{
+	text-decoration: none;
+}
+
+section a:hover{
 	text-decoration: none;
 }
 

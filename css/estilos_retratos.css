@@ -1,0 +1,28 @@
+.demas_imagenes{
+	width: 50%;
+	background-color: #d5c75f;
+}
+
+section img{
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+.demas_imagenes:first-child img{
+	filter: blur(10px);
+}
+
+.demas_imagenes:nth-child(2n) img{
+	filter: grayscale(100%);
+
+}
+
+.demas_imagenes:nth-child(3) img{
+	filter: sepia(90%);
+
+}
+
+@media (max-width: 900px) {
+	.demas_imagenes{
+		width: 100%;
+	}
+}
